@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+
+<head>
+	<meta charset="utf-8" />
+	<title>HTML | JS Calculator</title>
+	<meta name="description" content="Simple calculator made with HTML, JavaScript and CSS" />
+	<meta name="keywords" content="html, js, calculator, simple, javascript" />
+	<meta name="author" content="Mekko" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="calc.js"></script>
+	
+</head>
+
+<body>
+	<div id="container">
+		
+		<div id="numbers">
+		
+			<input type="text" id="number1" class="inputnumber" />
+			<input type="text" id="number2" class="inputnumber" />
+			
+		</div>
+		
+		<div id="operations">
+			<input type="submit" id="plus" class="button1" value="+" onclick=plus(); />
+			<input type="submit" id="minus" class="button1" value="-" onclick=minus(); />
+			<div style="clear:both;"></div>
+			<input type="submit" id="multiply" class="button1" value="x" onclick=multiply(); />
+			<input type="submit" id="divide" class="button1" value="/" onclick=divide(); />
+			<div style="clear:both;"></div>
+			<input type="submit" id="modulo" class="button1" value="%" onclick=modulo(); />
+			<input type="submit" id="exponent" class="button1" value="^" onclick=exponent(); />
+		</div>
+		
+		<div id="equal">
+		</div>
+	
+	</div>
+</body>
+
+</html>
