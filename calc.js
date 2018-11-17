@@ -4,7 +4,7 @@ function plus()
 	var b = document.getElementById("number2").value;
 	
 	if (a == "" || b == "") document.getElementById("equal").innerHTML="Input both numbers!";
-	else if ((a <= 0 || a >= 0) && (b <= 0 || b >= 0))
+	else
 	{
 		var a = eval(a);
 		var b = eval(b);
@@ -13,16 +13,15 @@ function plus()
 	
 		document.getElementById("equal").innerHTML=a+" + "+b+" = "+equal;
 	}
-	else document.getElementById("equal").innerHTML="Numbers only, please.";
 }
-
+	
 function minus()
 {
 	var a = document.getElementById("number1").value;
 	var b = document.getElementById("number2").value;
 	
 	if (a == "" || b == "") document.getElementById("equal").innerHTML="Input both numbers!";
-	else if ((a <= 0 || a >= 0) && (b <= 0 || b >= 0))
+	else
 	{
 		var a = eval(a);
 		var b = eval(b);
@@ -31,7 +30,6 @@ function minus()
 	
 		document.getElementById("equal").innerHTML=a+" - "+b+" = "+equal;
 	}
-	else document.getElementById("equal").innerHTML="Numbers only, please.";
 }
 
 function multiply()
@@ -40,7 +38,7 @@ function multiply()
 	var b = document.getElementById("number2").value;
 	
 	if (a == "" || b == "") document.getElementById("equal").innerHTML="Input both numbers!";
-	else if ((a <= 0 || a >= 0) && (b <= 0 || b >= 0))
+	else
 	{
 		var a = eval(a);
 		var b = eval(b);
@@ -49,7 +47,6 @@ function multiply()
 	
 		document.getElementById("equal").innerHTML=a+" × "+b+" = "+equal;
 	}
-	else document.getElementById("equal").innerHTML="Numbers only, please.";
 }
 
 function divide()
@@ -67,8 +64,7 @@ function divide()
 	
 		document.getElementById("equal").innerHTML=a+" / "+b+" = "+equal;
 	}
-	else if (b == "0") document.getElementById("equal").innerHTML="Never divide by zero!";
-	else document.getElementById("equal").innerHTML="Numbers only, please.";
+	else document.getElementById("equal").innerHTML="Never divide by zero!";
 }
 
 function modulo()
@@ -86,8 +82,7 @@ function modulo()
 	
 		document.getElementById("equal").innerHTML=a+" % "+b+" = "+equal;
 	}
-	else if (b == "0") document.getElementById("equal").innerHTML="Never divide by zero!";
-	else document.getElementById("equal").innerHTML="Numbers only, please.";
+	else document.getElementById("equal").innerHTML="Never divide by zero!";
 }
 
 function exponent()
@@ -96,7 +91,7 @@ function exponent()
 	var b = document.getElementById("number2").value;
 	
 	if (a == "" || b == "") document.getElementById("equal").innerHTML="Input both numbers!";
-	else if ((a <= 0 || a >= 0) && (b <= 0 || b >= 0))
+	else
 	{
 		var a = eval(a);
 		var b = eval(b);
@@ -105,5 +100,4 @@ function exponent()
 	
 		document.getElementById("equal").innerHTML=a+" ^ "+b+" = "+equal;
 	}
-	else document.getElementById("equal").innerHTML="Numbers only, please.";
 }
