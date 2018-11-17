@@ -58,7 +58,7 @@ function divide()
 	var b = document.getElementById("number2").value;
 	
 	if (a == "" || b == "") document.getElementById("equal").innerHTML="Input both numbers!";
-	else if ((a <= 0 || a >= 0) && (b < 0 || b > 0))
+	else if ((a <= 0 || a >= 0) && (b != 0))
 	{
 		var a = eval(a);
 		var b = eval(b);
@@ -77,7 +77,7 @@ function modulo()
 	var b = document.getElementById("number2").value;
 	
 	if (a == "" || b == "") document.getElementById("equal").innerHTML="Input both numbers!";
-	else if ((a <= 0 || a >= 0) && (b < 0 || b > 0))
+	else if ((a <= 0 || a >= 0) && (b != 0))
 	{
 		var a = eval(a);
 		var b = eval(b);
